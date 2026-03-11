@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+body{
+background:#f2f2f2;
+font-family:Arial;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container{
+width:600px;
+margin:40px auto;
+text-align:center;
+background:white;
+padding:30px;
+border-radius:12px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.board{
+display:grid;
+grid-template-columns:repeat(9,45px);
+gap:6px;
+justify-content:center;
+margin:20px 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.cell{
+width:45px;
+height:45px;
+text-align:center;
+font-size:18px;
+background:#333;
+color:white;
+border:none;
 }
 
-.App-link {
-  color: #61dafb;
+.buttons{
+margin-top:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+button{
+padding:10px 20px;
+border:none;
+border-radius:6px;
+margin:5px;
+font-size:16px;
+cursor:pointer;
+}
+
+.validate{
+background:#2f6df6;
+color:white;
+}
+
+.clear{
+background:#e74c3c;
+color:white;
+}
+
+.message{
+margin-top:15px;
+font-weight:bold;
 }
